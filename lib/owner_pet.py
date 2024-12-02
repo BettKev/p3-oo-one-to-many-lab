@@ -10,7 +10,6 @@ class Pet:
         self.owner = owner
         Pet.all.append(self)
 
-        # Automatically associate the pet with the owner, if provided
         if owner:
             owner.add_pet(self)
 
